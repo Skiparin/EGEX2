@@ -1,0 +1,22 @@
+<form ng-repeat="cars in Add.cars | filter: {id: Add.id.id}">
+    <label>{{cars}}</label> 
+    <input type="number" name="year" ng-model="car.year" value="{{cars.year}}"/>
+    <br>
+    <label>Registered</label> 
+    <input type="text" name="email" ng-model="car.registered" value="{{cars.regiestered}}"/>
+    <br>
+    <label>Make</label> 
+    <input type="number" name="phone" ng-model="car.make" value="{{cars.make}}"/>
+    <br>
+    <label>Model</label> 
+    <input type="number" name="model" ng-model="car.model" value="{{cars.model}}"/>
+    <br>
+    <label>Description</label> 
+    <input type="number" name="des" ng-model="car.description" value="{{cars.description}}"/>
+    <br>
+    <label>Price</label> 
+    <input type="number" name="price" ng-model="car.price" value="{{cars.price}}"/>
+    <br>
+    <br/>
+    <input type="button" value="Save" ng-click="Add.add(car)"/>
+</form>
